@@ -11,6 +11,6 @@ async def async_generator():
 	'''This coroutine loops 10*, waits for 1 sec and yields a random number between 0 and 10'''
 	for i in range(10):
 		random = random.random() * 10
-		await async.sleep(1)
+		await asyncio.sleep(1)
 		yield random
 	
